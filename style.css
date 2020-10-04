@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1b262c;
+}
+
+/* navbar */
+nav {
+  box-shadow: 3px 5px 25px #3e3e3e;
+  background-color: #1b262c;
+}
+
+#personalLogo {
+  width: 100px;
+}
+
+.nav-link {
+  font-weight: 700;
+  color: #eeeeee !important;
+  margin-left: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.active {
+  color: #bbe1fa !important;
+}
+
+/* Home */
+#home {
+  text-align: center;
+  padding-top: 65px;
+}
+
+.jumbotron {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#greet {
+  color: #eeeeee;
+  font-size: 4rem;
+}
+
+#name {
+  color: #3282b8;
+  font-size: 5rem;
+}
+hr {
+  width: 50%;
+  margin: 1rem auto;
+  border-color: #ffffd6;
+}
+.lead {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #bbe1fa;
+}
+
+/* Projects */
+#projects {
+  padding-top: 20px;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  color: #bbe1fa;
+}
+.card-header {
+  background-color: transparent;
+  border: none;
+}
+.card-header::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 30px;
+  background-color: #3282b8;
+  margin-top: -20px;
+}
+.img-thumbnail {
+  background-color: transparent;
+  border: none;
+}
+#projects .card-subtitle,
+#contact .card-subtitle {
+  margin-top: 15px;
+}
+
+#projects .card-subtitle:last-child,
+#contact .card-subtitle:last-child {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#projects .card .row,
+#contact .card .row {
+  margin-top: 40px;
+}
+
+#projects .card-title,
+#contact .card-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+#projects .card .row .col-lg-4 {
+  margin-top: 5px;
+}
+
+.text-muted {
+  color: #bbe1fa !important;
+}
+
+/* Contact */
+#contact {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#contact .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+#contact .card a {
+  text-decoration: none;
+  font-size: 0.55rem;
+  color: #bbe1fa;
+}
+
+#contact .card a:hover {
+  color: #3282b8;
+}
+
+footer {
+  padding: 10px;
+  background-color: #1b262c;
+  box-shadow: 3px 5px 25px #3e3e3e;
+}
+
+footer p {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 720px) {
+  #greet {
+    font-size: 6rem;
+    letter-spacing: 10px;
+  }
+  #name {
+    font-size: 8rem;
+    letter-spacing: 10px;
+  }
+  #projects .card-title,
+  #contact .card-title {
+    font-size: 4.5rem;
+  }
+  #home,
+  #projects,
+  #contact {
+    padding-top: 65px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #greet {
+    font-size: 8rem;
+    letter-spacing: 10px;
+  }
+  #name {
+    font-size: 12rem;
+    letter-spacing: 10px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: solid 3px #bbe1fa;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .card-header::after {
+    width: 30%;
+  }
+  #projects .card-header {
+    font-size: 1.5rem !important;
+  }
+  #contact .card a {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lead {
+    font-size: 1rem;
+  }
+  #contact .card a {
+    font-size: 14px;
+  }
+}
